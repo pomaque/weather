@@ -36,12 +36,12 @@ const bursa =
   "https://tr.weatherspark.com/td/96052/Bursa-T%C3%BCrkiye-Ortalama-Hava-Durumu-Bug%C3%BCn";
 //#endregion
 
-// cron.schedule("*/1 * * * *", () => {
+  cron.schedule("*/1 * * * *", () => {
   getDegree(izmir);
   getDegree(istanbul);
   getDegree(ankara);
   getDegree(bursa);
-// });
+  });
 
 function getDegree(cityURL) {
   let randomHeaders = ["Emre", "Erbek", "Adamdir"];
@@ -79,16 +79,16 @@ Temps.create({
 console.log(fullTextSplit[6] + " " + temps);
     }
   );
-  //console.log(dateTurkey)
-  // process.exit();
+  console.log(dateTurkey)
+   process.exit();
 }
 
-// //Header test
-// app.get("/test", function (req, res, next) {
-//   console.log(req.headers);
-// });
+  Header test
+ app.get("/test", function (req, res, next) {
+   console.log(req.headers);
+ });
 
-// var port = 3000
-// app.listen(port, ()=>{
-//     console.log(`Server is running on ${port}`)
-// });
+ var port = 3000
+ app.listen(port, ()=>{
+    console.log(`Server is running on ${port}`)
+ });
