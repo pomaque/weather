@@ -79,7 +79,7 @@ Temps.create({
 console.log(fullTextSplit[6] + " " + temps);
     }
   );
-  console.log(dateTurkey)
+  //console.log(dateTurkey)
   // process.exit();
 }
 
